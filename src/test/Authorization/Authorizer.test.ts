@@ -102,8 +102,8 @@ describe('Authorizer test suite', () => {
       });
     });
 
-    test('valiteToken returns valid for not expired and valid token', async () => {
-      const dateInFuture = new Date(Date.now() + 100000);
+    test.only('validateToken returns valid for not expired and valid token', async () => {
+      const dateInFuture = new Date(Date.now() + 10000);
       sessionTokenDBAccessMock.getToken.mockReturnValue({
         valid: true,
         expirationTime: dateInFuture,

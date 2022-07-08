@@ -92,7 +92,7 @@ describe('UserCredentialsDbAccess test suite', () => {
       userCredentialsDBAccess.getUserCredential('someUserName', 'somePassword')
     ).rejects.toThrow('something went wrong');
     expect(nedbMock.find).toBeCalledWith(
-      { userName: 'someUserName', password: 'somePassword' },
+      { username: 'someUserName', password: 'somePassword' },
       expect.any(Function)
     );
   });

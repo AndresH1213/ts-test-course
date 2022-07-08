@@ -39,7 +39,7 @@ describe('loginHandler test suite', () => {
 
   const someSessionToken: SessionToken = {
     tokenId: 'someTokenId',
-    userName: 'someUserName',
+    username: 'someUserName',
     valid: true,
     expirationTime: new Date(),
     accessRights: [1, 2, 3],
