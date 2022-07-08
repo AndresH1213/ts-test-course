@@ -20,8 +20,12 @@
   },
   "homepage": "https://github.com/AndresH1213/ts-test-course#readme",
   "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/axios": "^0.14.0",
     "@types/jest": "^28.1.4",
+    "@types/nedb": "^1.8.12",
     "@types/node": "^18.0.1",
+    "axios": "^0.27.2",
     "jest": "^28.1.2",
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.2",
