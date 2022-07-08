@@ -1,5 +1,5 @@
 import { SessionToken } from '../Models/ServerModels';
-import * as Nedb from 'nedb';
+import Nedb from 'nedb';
 
 export class SessionTokenDBAccess {
   private nedb: Nedb;
@@ -42,7 +42,7 @@ export class SessionTokenDBAccess {
       this.nedb.remove(
         { tokenId: tokenId },
         {},
-        (err: Error, numRemove: number) => {
+        (err: Error | null, numRemove: number) => {
           if (err) {
             reject(err);
           } else {
