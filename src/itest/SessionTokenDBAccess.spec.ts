@@ -12,7 +12,7 @@ describe('First itest suite', () => {
       accessRights: [1, 2, 3],
       expirationTime: new Date(),
       tokenId: 'sometokenId' + randomString,
-      userName: 'someUserName',
+      username: 'someUserName',
       valid: true,
     };
   });
